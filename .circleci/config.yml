@@ -38,7 +38,7 @@ jobs:
           name: Creating Dummy Artifacts
           command: |
             mkdir /tmp/artifacts;
-            ls -al ./build/outputs/apk/freeSystem > /tmp/artifacts/artifact-2;
+            ls -al ./build/outputs/apk/freeSystem/release > /tmp/artifacts/artifact-2;
       - store_artifacts:
           path: /tmp/artifacts
 
