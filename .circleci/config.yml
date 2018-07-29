@@ -31,15 +31,15 @@ jobs:
 #          name: Initial build
 #          command: ./gradlew clean assembleRelease --no-daemon --stacktrace
       - store_artifacts:
-          path: app/build/outputs/apk/
+          path: ./build/outputs/apk/
           destination: apks/
 
       - run:
           name: Creating Dummy Artifacts
           command: |
             mkdir /tmp/artifacts;
-            cp -a Conversations-2.2.8-free-system-release-unsigned.apk /tmp/artifacts/release.apk
-            #ls -al ./build/outputs/apk/freeSystem/release > /tmp/artifacts/artifact-2;
+            #cp -a Conversations-2.2.8-free-system-release-unsigned.apk /tmp/artifacts/release.apk
+            ls -al ./build/outputs/apk/freeSystem/release > /tmp/artifacts/artifact-2;
       - store_artifacts:
           path: /tmp/artifacts
 
