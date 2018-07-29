@@ -24,8 +24,8 @@ jobs:
       - run:
           name: Run Tests
           #command: ./gradlew lint test
-          #command: ./gradlew assembleFreeSystemRelease
-          command: ./gradlew assemble
+          command: ./gradlew assembleFreeSystemRelease
+          #command: ./gradlew assemble
 
 #      - run:
 #          name: Initial build
