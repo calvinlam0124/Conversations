@@ -38,7 +38,7 @@ jobs:
           name: Creating Dummy Artifacts
           command: |
             mkdir /tmp/artifacts;
-            ls -al > /tmp/artifacts/artifact-2;
+            ls -al build > /tmp/artifacts/artifact-2;
       - store_artifacts:
           path: /tmp/artifacts
 
