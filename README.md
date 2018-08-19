@@ -1,3 +1,6 @@
+[![DepShield Badge](https://depshield.sonatype.org/badges/calvinlam0124/Conversations/depshield.svg)](https://depshield.github.io)
+
+
 <h1 align="center">Conversations</h1>
 
 <p align="center">Conversations: the very last word in instant messaging</p>
